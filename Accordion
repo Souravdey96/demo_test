@@ -1,0 +1,145 @@
+// Accordion HTML
+<section class="industry">
+      <div class="container">
+        <div class="row head">
+          <div class="heading">
+            <h2>
+              Industry Leading Pay & Clients That Appreciate Hard Work and
+              Flexibility
+            </h2>
+            <p class="ta-left">
+              At Riva, our consultants and VAs are the backbone of our
+              business. We offer competitive compensation, flexible schedules
+              and equity stake in our company for our fast-track leaders.
+            </p>
+          </div>
+          <div class="accordion">
+            <div class="question">
+              <h4>Virtual Assistants(Philippines)</h4>
+              <i class="icon fa-solid fa-caret-down"></i>
+            </div>
+            <div class="answer">
+              Gain valuable experience working with US-based clients as part
+              of our team of certified accountants. We provide opportunities
+              for professional growth, advancement, and exposure to various
+              industries. Join our team and make a significant impact on
+              businesses globally while working in a collaborative and
+              rewarding environment.
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="question">
+              <h4>Accountants & Bookkeepers (India)</h4>
+              <i class="icon fa-solid fa-caret-down"></i>
+            </div>
+            <div class="answer">
+              Gain valuable experience working with US-based clients as part
+              of our team of certified accountants. We provide opportunities
+              for professional growth, advancement, and exposure to various
+              industries. Join our team and make a significant impact on
+              businesses globally while working in a collaborative and
+              rewarding environment.
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="question">
+              <h4>Developers (LatAm, India & Eastern Europe)</h4>
+              <i class="icon fa-solid fa-caret-down"></i>
+            </div>
+            <div class="answer">
+              Gain valuable experience working with US-based clients as part
+              of our team of certified accountants. We provide opportunities
+              for professional growth, advancement, and exposure to various
+              industries. Join our team and make a significant impact on
+              businesses globally while working in a collaborative and
+              rewarding environment.
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="question">
+              <h4>Fractional CMOs/CROs (US)</h4>
+              <i class="icon fa-solid fa-caret-down"></i>
+            </div>
+            <div class="answer">
+              Gain valuable experience working with US-based clients as part
+              of our team of certified accountants. We provide opportunities
+              for professional growth, advancement, and exposure to various
+              industries. Join our team and make a significant impact on
+              businesses globally while working in a collaborative and
+              rewarding environment.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+//Accordion CSS
+.industry{
+    min-height: 800px;
+}
+
+.industry .container .row .heading{
+    max-width: 100%;
+}
+
+.industry .container .row .heading h2{
+    font-size: 50px;
+    padding-bottom: 40px;
+    font-family: "Roboto Slab", serif;
+}
+
+.industry .container .row .heading p{
+    font-size: 20px;
+    padding-bottom: 45px;
+}
+
+.industry .container .row .accordion{
+    background-color: #fff;
+    padding: 4px 26px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    max-width: 90%;
+    cursor: pointer;
+}
+
+.industry .container .row .accordion .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    overflow: hidden;
+}
+
+.industry .container .row .accordion .question .icon{
+    margin-right: 16px;
+    transition: 0.3s ease;
+    padding: 7px 10px;
+    background-color: #00796B;
+    border-radius: 50%;
+    color: white;
+}
+
+.industry .container .row .accordion .question .icon.active{
+    transform: rotate(180deg);
+}
+
+.industry .container .row .accordion .answer{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.industry .container .row .accordion:hover{
+    background-color: #00796B;
+    color: white;
+    .icon{
+        background-color: #fff;
+        color: black;
+    }
+}
+
+
+.industry .container .row .accordion .answer.active{
+    max-height: fit-content;
+    transition: all 2s ease;
+}
