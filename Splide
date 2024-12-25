@@ -1,0 +1,143 @@
+//Splide JS CDN
+<!-- splide js cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+
+<!-- splide js -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+//splide JS HTML
+
+<section class="splide splidemain">
+      <div class="container">
+        <div class="row head">
+          <div class="splide__splider">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="col-30">
+                    <p class="col-w">Unreal. Can't imagine life without her any more. Lastpass is legitgave her access
+                      to everything
+                      and literally sending her voice notes all day when on the move she's doing proactively managing
+                      everything.</p>
+                  </div>
+                  <div class="nordic">
+                    <span class="col-w">Nordic Partners</span>
+                    <span class="col-w">Investments</span>
+                  </div>
+                  <div class="logo-touch">
+                    <figure><img src="./IMG/logo.png" alt="logo touchpoint"></figure>
+                  </div>
+                  <div class="quotes-a">
+                    <figure><img src="./IMG/quotes-1.png" alt="quotes-1"></figure>
+                  </div>
+                  <div class="quotes-b">
+                    <figure><img src="./IMG/quotes-2.png" alt="quotes-2"></figure>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="splide__arrows">
+              <!-- <button class="splide__arrow splide__arrow--prev"></button>
+              <button class="splide__arrow splide__arrow--next"></button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+//Splide JS CSS
+
+.splidemain{
+    min-height: 604px;
+    background-color: #111111;
+}
+
+.splidemain .container .row .splide__splider .splide__track .splide__slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    width: 100%;
+    height: 100%;
+}
+
+/* .splidemain .container .row .splide__splider .splide__track .splide__slide.is-active.is-visible{
+    width: 100%;
+} */
+
+.splidemain .container .row .splide__splider .splide__track .splide__slide .star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.splidemain .container .row .splide__splider .splide__track .splide__slide .star i{
+    /* padding: 0 5px; */
+    font-size: 30px;
+    color: yellow;
+}
+
+.splidemain .container .row .splide__splider .splide__track .splide__slide .col-30{
+    padding-top: 49px;
+    padding-inline: unset;
+}
+
+.splidemain .container .row .splide__splider .splide__track .splide__slide .nordic{
+    padding-top: 48px;
+}
+
+.splidemain .container .row .splide__splider .splide__track .splide__slide .nordic span{
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    font-family: "Roboto Slab",serif;
+}
+
+.splidemain .container .row .splide__splider .splide__track .splide__slide .logo-touch{
+    padding-top: 85px;
+}
+
+/* .splidemain .container .row .splide__splider .splide__track .splide__slide .splide-arrow 
+.your-class-prev{
+    color: black;
+    padding: 20px !important;
+} */
+
+.splidemain .container .row .splide__splider .splide__track .splide__slide .quotes-a{
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
+.splidemain .container .row .splide__splider .splide__track .splide__slide .quotes-b{
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+}
+
+//Splide JS Code
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Splide(".splide", {
+        type: "loop",
+        autoplay: "pause",
+        autoWidth: true,
+        autoHeight: true,
+        classes: {
+          arrows: 'splide__arrows your-class-arrows',
+          arrow: 'splide__arrow your-class-arrow',
+          prev: 'splide__arrow--prev your-class-prev',
+          next: 'splide__arrow--next your-class-next',
+        },
+      }).mount();
+    });
+  </script>
