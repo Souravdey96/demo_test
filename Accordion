@@ -143,3 +143,23 @@
     max-height: fit-content;
     transition: all 2s ease;
 }
+
+//Accordion JS
+
+<script>
+    const accordians = document.querySelectorAll(".accordion");
+
+    accordians.forEach((accordion) => {
+      const icon = accordion.querySelector(".icon");
+      const answer = accordion.querySelector(".answer");
+
+      accordion.addEventListener("click", () => {
+        icon.classList.toggle("active");
+        answer.classList.toggle("active");
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        icon.classList.remove("active");
+        answer.classList.remove("active");
+      })
+    });
+  </script>
