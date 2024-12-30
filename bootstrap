@@ -6,33 +6,49 @@
 
 //bootstrap html
 
-<header class="position-relative">
+ <header class="position-relative">
         <nav class="navbar navbar-expand-lg position-absolute w-100">
-          <div class="container">
-            <input type="text" placeholder="search destinations or activites" id="text">
+          <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="index.html">
+                <img src="./IMG/logo.png" alt="logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nav-menu">
-                <a class="navbar-brand ms-auto" href="index.html">
-                    <img src="./IMG/logo.png" alt="logo">
-                </a>
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link px-3 text-white" href="#about">USD</a>
+                        <a class="nav-link active text-white" href="#home">Home</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 text-white" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3 text-white" href="#contact">Sign Up</a>
+                        <a class="nav-link px-3 text-white" href="#OurServices">Our Services</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" style="padding: 12px 21px; background-color: #fff; color: #000; border-radius: 20px;
-                       transition: all 0.3s ease;" href="#home">Log in</a>
+                        <a class="nav-link px-3 text-white" href="#Investments">Investments</a>
                     </li>
-                  </ul>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 text-white" href="#Expertise">Expertise</a>    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 text-white" href="#Projects">Projects</a>    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 text-white" href="#Commitment">Commitmement</a>    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 text-white" href="#Blogs">Blogs</a>    
+                    </li>
+                </ul>
+                <div class="nav-menu-b">
+                    <a href="#contact" class="text-white">Contact Us <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
           </div>  
         </nav>
-      </header>
+      </header>    
       <!-- =========banner============= -->
       <section class="banner">
         <div class="container-fluid">
@@ -60,6 +76,27 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+        </div>
+      </section>
+
+         <main>
+      <section class="banner pt-5 mb-5 d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row d-flex flex-column justify-content-start align-items-start">
+                <div class="col-lg-6 col-12">
+                    <span style="display: block;" class="text-white pb-2">
+                        Construction & Remodelling
+                    </span>
+                    <h1 class="text-white">
+                        QUALITY CONSTRUCTION
+                    </h1>
+                    <h2 class="h3-title text-white">
+                        Based in middle Tennessee
+                    </h2>
+                    <p class="text-white mb-5">Are you ready to create the house of your dreams?</p>
+                    <a href="#contact" class="text-white">Contact Us <i class="fa-solid fa-arrow-up-right-from-square ps-2"></i></a>
+                </div>
+            </div>
         </div>
       </section>
 
